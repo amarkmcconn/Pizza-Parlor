@@ -22,16 +22,17 @@
       <form id="pizzaOrder">
         <label for="pizza"><strong>Please pick your pizza size:</strong></label>
           <select class="form-control" id="pizzaSize">
-            <option>Medium</option>
+            <option value="medium">Medium</option>
             <option>Large</option>
             <option>X-Large</option>
           </select>
         <label for="toppings"><strong>Please select your toppings:</strong></label> <br>
-          <input type="checkbox" name="topping" id="topping1" value="cheese" /> Cheese<br />
+          <input type="checkbox" name="topping" id="topping1" value="cheese" checked/> Cheese<br />
           <input type="checkbox" name="topping" id="topping2" value="pepperoni" /> Pepperoni<br />
           <input type="checkbox" name="topping" id="topping3" value="pinneapple" /> Pinneapple<br />
         <button type="submit">Complete your order</button>
-      </form>     
+      </form>
+      <p id="output"></p>     
   </div>
 </body>
 </html>

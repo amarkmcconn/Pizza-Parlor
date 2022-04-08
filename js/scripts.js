@@ -4,27 +4,27 @@ Pizza.prototype.getPrice = function() {
   const price = 10
   if (this.pizzaSize === "medium") {
     if (this.toppings === "cheese") {
-      console.log(price + 6);
+      return price + 6;
     } else if (this.toppings === ("cheese", "pepperoni")) {
-      console.log(price + 7);
+      return price + 7;
     } else {
-      console.log(price + 8);
+      return price + 8;
     }
   } else if (this.pizzaSize === "large")  {
     if (this.toppings === "cheese") {
-      console.log(price + 11);
+      return price + 11;
     } else if (this.toppings === ("cheese", "pepperoni")) {
-      console.log(price + 12);
+      return price + 12;
     } else {
-      console.log(price + 13);
+      return price + 13;
     }
   } else if (this.pizzaSize === "xlarge") {
     if (this.toppings === "cheese") {
-      console.log(price + 15);
+      return price + 15;
     } else if (this.toppings === ("cheese", "pepperoni")) {
-      console.log(price + 16);
+      return price + 16;
     } else {
-      console.log(price + 17);
+      return price + 17;
     }
   }
 }
@@ -35,6 +35,20 @@ function Pizza(pizzaSize, toppings) {
 }
 
 //UI Logic ---
+// function displayPizzaOrder()
 
+$(document).ready(function(){
+  $("form#pizzaOrder").submit(function(event) {
+    event.preventDefault();
+    const pizzaSize = $("#pizzaSize").val();
+    let topping1 = document.querySelector("#topping1").checked;
+    // let topping2 = $("input#topping2").val();
+    // let topping3 = $("input#topping3").val();
+    let myPizza = new Pizza(pizzaSize, [topping1, topping2, topping3])
+    let myPizzaPrice = myPizza.getPrice();
+    console.log(myPizzaPrice);
+    // displayPizzaOrder(myPizza);
+  })
+})
 
 
