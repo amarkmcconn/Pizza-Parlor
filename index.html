@@ -27,9 +27,19 @@
             <option value="xlarge">X-Large</option>
           </select>
         <label for="toppings"><strong>Please select your toppings:</strong></label> <br>
-          <input type="checkbox" name="topping" id="topping1" value="cheese" checked/> Cheese<br />
-          <input type="checkbox" name="topping" id="topping2" value="pepperoni" /> Pepperoni<br />
-          <input type="checkbox" name="topping" id="topping3" value="pinneapple" /> Pinneapple<br />
+          <div>
+            <input type="checkbox" name="topping" value="cheese" checked>
+            <label for="cheese">Cheese</label>
+          </div>    
+          <div>
+            <input type="checkbox" name="topping"  value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+          </div>  
+          <div>
+            <input type="checkbox" name="topping" value="pinneapple">
+            <label for="pinneapple">Pinneapple</label>
+          </div>  
+          
         <button type="submit">Complete your order</button>
       </form>
       <p id="output"></p>     
