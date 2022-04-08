@@ -1,11 +1,11 @@
 //Business Logic ---
-
+// If i test my logic I get the correct values?????
 Pizza.prototype.getPrice = function() {
   const price = 10
   if (this.pizzaSize === "medium") {
-    if (this.toppings === "cheese") {
+    if (this.toppings === ("cheese")) {
       return price + 6;
-    } else if (this.toppings === ('cheese', 'pepperoni')) {
+    } else if (this.toppings === ("cheese", "pepperoni")) {
       return price + 7;
     } else {
       return price + 8;
