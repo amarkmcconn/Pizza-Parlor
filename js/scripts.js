@@ -1,3 +1,5 @@
+//Business Logic ---
+
 Pizza.prototype.getPrice = function() {
   const price = 10
   if (this.pizzaSize === "medium") {
@@ -27,12 +29,12 @@ Pizza.prototype.getPrice = function() {
   }
 }
 
-
 function Pizza(pizzaSize, toppings) {
   this.pizzaSize = pizzaSize;
   this.toppings = toppings; 
 }
 
+//UI Logic ---
 
 
 

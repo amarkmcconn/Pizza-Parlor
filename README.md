@@ -85,16 +85,16 @@ myPizza.getPrice();
 Expected Output: 
 27
 ```
-# _Mark's Pizza Parlor_
+# _Pizza Parlor_
 #### By _**Mark McConnell**_
-#### _{Brief description of application}_
+#### _This is a web application that allows user to order a pizza_
 ## Technologies Used
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _jQuery_
+* _JavaScript_
 ## Description
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This is a website for a pizza company where a user can choose one or more individual toppings and a size to order a pizza and see the final cost._
 ## Setup/Installation Requirements
 * _This is a great place_
 * _to list setup instructions_
@@ -104,11 +104,10 @@ _{This is a detailed description of your application. Give as much detail as nee
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known issues at this time_
 
 ## License
 
-_If they run into any issues or have questions, ideas or concerns.  Please contact me @mark-programming1@gmail.com or make a contribution to the code._
+_If you run into any issues or have questions, ideas or concerns.  Please email me @mark-programming1@gmail.com or make a contribution to the code._
 
 Copyright (c) _2022_ _Mark McConnell_
