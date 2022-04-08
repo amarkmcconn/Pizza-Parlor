@@ -30,7 +30,7 @@ Expected Output:
 17
 
 Test 3:
-"It should return a Pizza object with two properties for size and topping and price of 17"
+"It should return a Pizza object with two properties for size and topping and price of 21"
 Code: 
 let myPizza = new Pizza ("large", "cheese");
 myPizza.getPrice();
@@ -38,7 +38,7 @@ Expected Output:
 21
 
 Test 4:
-"It should return a Pizza object with two properties for size and topping and price of 17"
+"It should return a Pizza object with two properties for size and topping and price of 22"
 Code: 
 let myPizza = new Pizza ("large", ["cheese", "pepperoni"]);
 myPizza.getPrice();
@@ -46,7 +46,7 @@ Expected Output:
 22
 
 Test 5:
-"It should return a Pizza object with two properties for size and topping and price of 17"
+"It should return a Pizza object with two properties for size and topping and price of 25"
 Code: 
 let myPizza = new Pizza ("xlarge", "cheese");
 myPizza.getPrice();
@@ -54,12 +54,20 @@ Expected Output:
 25
 
 Test 6:
-"It should return a Pizza object with two properties for size and topping and price of 17"
+"It should return a Pizza object with two properties for size and topping and price of 26"
 Code: 
 let myPizza = new Pizza ("xlarge", ["cheese", "pepperoni"]);
 myPizza.getPrice();
 Expected Output: 
 26
+
+Test 7:
+"It should return a Pizza object with two properties for size and topping and price of 18"
+Code: 
+let myPizza = new Pizza ("medium", ["cheese", "pepperoni", "pinneapple"]);
+myPizza.getPrice();
+Expected Output: 
+18
 
 ```
 # _Mark's Pizza Parlor_

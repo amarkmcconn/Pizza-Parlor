@@ -3,8 +3,10 @@ Pizza.prototype.getPrice = function() {
   if (this.pizzaSize === "medium") {
     if (this.toppings === "cheese") {
       console.log(price + 6);
-    } else {
+    } else if (this.toppings === ("cheese", "pepperoni")) {
       console.log(price + 7);
+    } else {
+      console.log(price + 8);
     }
   } else if (this.pizzaSize === "large")  {
     if (this.toppings === "cheese") {
