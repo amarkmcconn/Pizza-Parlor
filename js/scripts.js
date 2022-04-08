@@ -19,8 +19,10 @@ Pizza.prototype.getPrice = function() {
   } else if (this.pizzaSize === "xlarge") {
     if (this.toppings === "cheese") {
       console.log(price + 15);
+    } else if (this.toppings === ("cheese", "pepperoni")) {
+      console.log(price + 16);
     } else {
-      console.log(price + 16)
+      console.log(price + 17);
     }
   }
 }
