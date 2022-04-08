@@ -23,8 +23,9 @@
 }
 
 .card {
+  padding: 1rem;
   width: 90%;
-  background-color: rgb(131, 124, 124);
+  background-color: rgb(62, 117, 139);
   color: aliceblue;
   text-align: auto;
   margin: auto;
@@ -54,4 +55,8 @@ button:hover {
 
 body {
   background-image: url(../img/R\ \(1\).jpg)
+}
+
+img {
+  width: 50%;
 }
