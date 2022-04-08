@@ -69,6 +69,21 @@ myPizza.getPrice();
 Expected Output: 
 18
 
+Test 8:
+"It should return a Pizza object with two properties for size and topping and price of 23"
+Code: 
+let myPizza = new Pizza ("large", ["cheese", "pepperoni", "pinneapple"]);
+myPizza.getPrice();
+Expected Output: 
+23
+
+Test 9:
+"It should return a Pizza object with two properties for size and topping and price of 27"
+Code: 
+let myPizza = new Pizza ("xlarge", ["cheese", "pepperoni", "pinneapple"]);
+myPizza.getPrice();
+Expected Output: 
+27
 ```
 # _Mark's Pizza Parlor_
 #### By _**Mark McConnell**_
