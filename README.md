@@ -29,9 +29,25 @@ myPizza.getPrice();
 Expected Output: 
 17
 
+Test 3:
+"It should return a Pizza object with two properties for size and topping and price of 17"
+Code: 
+let myPizza = new Pizza ("large", "cheese");
+myPizza.getPrice();
+Expected Output: 
+21
+
+Test 4:
+"It should return a Pizza object with two properties for size and topping and price of 17"
+Code: 
+let myPizza = new Pizza ("large", ["cheese", "pepperoni"]);
+myPizza.getPrice();
+Expected Output: 
+22
+
 ```
 # _Mark's Pizza Parlor_
-#### By _**{List of contributors}**_
+#### By _**Mark McConnell**_
 #### _{Brief description of application}_
 ## Technologies Used
 * _List all_
@@ -54,6 +70,6 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If they run into any issues or have questions, ideas or concerns.  Please contact me @mark-programming1@gmail.com or make a contribution to the code._
 
 Copyright (c) _2022_ _Mark McConnell_

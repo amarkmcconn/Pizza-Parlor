@@ -1,13 +1,15 @@
 Pizza.prototype.getPrice = function() {
   const price = 10
   if (this.pizzaSize === "medium") {
-    if(this.toppings === "cheese") {
+    if (this.toppings === "cheese") {
       console.log(price + 6);
     } else {
       console.log(price + 7)
     }
-  } else  {
-    
+  } else if (this.pizzaSize === "large")  {
+    if (this.toppings === "cheese") {
+      console.log(price + 11)
+    }
   }
 }
 
@@ -20,9 +22,3 @@ function Pizza(pizzaSize, toppings) {
 
 
 
-// Pizza.prototype.getPrice = function() {
-//   const mediumPizza = 15;
-//   if (this.pizzaSize === "medium" && this.toppings === ["cheese", "pepperoni"]) {
-//     console.log(mediumPizza + 2);
-//   }
-// }
