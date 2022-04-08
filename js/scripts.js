@@ -37,14 +37,18 @@ function Pizza(pizzaSize, toppings) {
 //UI Logic ---
 // function displayPizzaOrder()
 
+let myPizza = {}
+
 $(document).ready(function(){
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
     const pizzaSize = $("#pizzaSize").val();
     let topping1 = document.querySelector("#topping1").checked;
-    // let topping2 = $("input#topping2").val();
-    // let topping3 = $("input#topping3").val();
-    let myPizza = new Pizza(pizzaSize, [topping1, topping2, topping3])
+    let topping2 = document.querySelector("#topping2").checked;
+    let topping3 = document.querySelector("#topping3").checked;
+    if (topping1 === true && topping2 === true & topping3 === true) {
+      let myPizza = new Pizza(pizzaSize, [topping1, topping2, topping3])
+      }
     let myPizzaPrice = myPizza.getPrice();
     console.log(myPizzaPrice);
     // displayPizzaOrder(myPizza);
