@@ -4,11 +4,13 @@ Pizza.prototype.getPrice = function() {
     if (this.toppings === "cheese") {
       console.log(price + 6);
     } else {
-      console.log(price + 7)
+      console.log(price + 7);
     }
   } else if (this.pizzaSize === "large")  {
     if (this.toppings === "cheese") {
-      console.log(price + 11)
+      console.log(price + 11);
+    } else {
+      console.log(price + 12);
     }
   }
 }
