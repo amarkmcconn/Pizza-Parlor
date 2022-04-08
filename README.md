@@ -8,7 +8,7 @@ Expected Output: Pizza {pizzaSize: undefined, toppings: undefined}
 
 Test 2: 
 "It should return a Pizza object with two properties for toppings and size"
-Code: const myPizza = new Pizza(["cheese", "pineapple"], "medium");
+Code: let myPizza = new Pizza(["cheese", "pineapple"], "medium");
 Expected Output: Pizza { size: "medium" toppings: ["cheese", "pineapple"], }
 
 ```
