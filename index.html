@@ -9,9 +9,29 @@
 </head>
 <body>
   <div class="container">
-    <h1>Mark's Pizza Parlor</h1>
-    <h2>Please Choose a Pizza:</h2>
-      
+    <div class="jumbotron">
+      <h1>Mark's Pizza Parlor</h1>
+      <h3>Pizza Pricing:</h3>
+      <ul>
+        <li>Medium $15.00</li>
+        <li>Large $20.00</li>
+        <li>X-Large $25.00</li>
+        <li> $1.00 for each additional Topping</li>
+      </ul>
+    </div>
+      <form id="pizzaOrder">
+        <label for="pizza"><strong>Please pick your pizza size:</strong></label>
+          <select class="form-control" id="pizzaSize">
+            <option>Medium</option>
+            <option>Large</option>
+            <option>X-Large</option>
+          </select>
+        <label for="toppings"><strong>Please select your toppings:</strong></label> <br>
+          <input type="checkbox" name="topping" id="topping1" value="cheese" /> Cheese<br />
+          <input type="checkbox" name="topping" id="topping2" value="pepperoni" /> Pepperoni<br />
+          <input type="checkbox" name="topping" id="topping3" value="pinneapple" /> Pinneapple<br />
+        <button type="submit">Complete your order</button>
+      </form>     
   </div>
 </body>
 </html>
