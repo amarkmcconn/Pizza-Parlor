@@ -1,32 +1,30 @@
 //Business Logic ---
 // If i test my logic I get the correct values?????
 Pizza.prototype.getPrice = function() {
-  const mediumPizza = 15
-  const largePizza = 20
-  const xlargePizza = 24
+  const price = 10
   if (this.pizzaSize === "medium") {
-    if (this.toppings === ("cheese", "pepperoni", "pinneapple")) {
-      return mediumPizza + 3;
+    if (this.toppings === "cheese") {
+      console.log(price + 6);
     } else if (this.toppings === ("cheese", "pepperoni")) {
-      return mediumPizza + 2;
+      console.log(price + 7);
     } else {
-      return mediumPizza + 1;
+      console.log(price + 8);
     }
   } else if (this.pizzaSize === "large")  {
     if (this.toppings === "cheese") {
-      return largePizza + 1;
+      console.log(price + 11);
     } else if (this.toppings === ("cheese", "pepperoni")) {
-      return largePizza + 2;
+      console.log(price + 12);
     } else {
-      return largePizza + 3
+      console.log(price + 13);
     }
   } else if (this.pizzaSize === "xlarge") {
     if (this.toppings === "cheese") {
-      return xlargePizza + 1;
+      console.log(price + 15);
     } else if (this.toppings === ("cheese", "pepperoni")) {
-      return xlargePizza + 2;
+      console.log(price + 16);
     } else {
-      return xlargePizza + 3
+      console.log(price + 17);
     }
   }
 }
@@ -35,6 +33,8 @@ function Pizza(pizzaSize, toppings) {
   this.pizzaSize = pizzaSize;
   this.toppings = toppings; 
 }
+
+
 
 //UI Logic ---
 // function displayPizzaOrder()
