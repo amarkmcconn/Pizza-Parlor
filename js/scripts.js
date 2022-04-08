@@ -5,7 +5,7 @@ Pizza.prototype.getPrice = function() {
   if (this.pizzaSize === "medium") {
     if (this.toppings === "cheese") {
       return price + 6;
-    } else if (this.toppings === ["cheese", "pepperoni"]) {
+    } else if (this.toppings === ('cheese', 'pepperoni')) {
       return price + 7;
     } else {
       return price + 8;
@@ -13,18 +13,18 @@ Pizza.prototype.getPrice = function() {
   } else if (this.pizzaSize === "large")  {
     if (this.toppings === "cheese") {
       return price + 11;
-    } else if (this.toppings === ["cheese", "pepperoni"]) {
+    } else if (this.toppings === ("cheese", "pepperoni")) {
       return price + 12;
     } else {
-      return price + 13;
+      return price + 13
     }
   } else if (this.pizzaSize === "xlarge") {
     if (this.toppings === "cheese") {
       return price + 15;
-    } else if (this.toppings === ["cheese", "pepperoni"]) {
+    } else if (this.toppings === ("cheese", "pepperoni")) {
       return price + 16;
     } else {
-      return price + 17;
+      return price + 17
     }
   }
 }
@@ -47,10 +47,10 @@ $(document).ready(function(){
     })
     let myPizza = new Pizza(pizzaSize, ele)
     let myPizzaPrice = myPizza.getPrice();
-    console.log(myPizzaPrice);
-    
-  });
-});    
+    $("#output").text(myPizzaPrice);
+    });
+});   
+   
 
 
 
