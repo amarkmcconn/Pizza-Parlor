@@ -7,9 +7,19 @@ Code: let myPizza = new Pizza();
 Expected Output: Pizza {pizzaSize: undefined, toppings: undefined}
 
 Test 2: 
-"It should return a Pizza object with two properties for toppings and size"
-Code: let myPizza = new Pizza(["cheese", "pineapple"], "medium");
-Expected Output: Pizza { size: "medium" toppings: ["cheese", "pineapple"], }
+"It should return a Pizza object with two properties for size and toppings"
+Code: let myPizza = new Pizza(["cheese", "pepperoni"], "medium");
+Expected Output: Pizza { size: "medium" toppings: ["cheese", "pepperoni"], }
+
+Describe Pizza.prototype.getPrice = function(pizza)
+Test 1:
+"It should return a Pizza object with two properties for size and topping and price of 16"
+Code: 
+let myPizza = new Pizza("medium", "cheese");
+myPizza.getPrice();
+Expected Output: 
+16
+
 
 ```
 # _Mark's Pizza Parlor_
