@@ -1,6 +1,6 @@
 .jumbotron {
   width: 90%;
-  background-color: rgb(131, 124, 124);
+  background-color: rgb(62, 117, 139);
   color: aliceblue;
   text-align: auto;
   margin: auto;
@@ -19,7 +19,7 @@
   0 25.1px 20.1px rgba(0, 0, 0, 0.185),
   0 36.5px 29.2px rgba(0, 0, 0, 0.207),
   0 56.3px 45px rgba(0, 0, 0, 0.237),
-  0 100px 80px rgba(0, 0, 0, 0.3);
+  0 100px 80px rgba(92, 75, 75, 0.3);
 }
 
 .card {
