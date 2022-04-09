@@ -1,6 +1,6 @@
 //Business Logic ---
 // If i test my logic I get the correct values????
-
+// prior tests don't work ever though new logic passed. my current if logic does not work. 
 Pizza.prototype.getPrice = function() {
   const price = 10
   if (this.pizzaSize === "medium") {
