@@ -1,25 +1,23 @@
 //Business Logic ---
-// If i test my logic I get the correct values????
-// prior tests don't work even though new logic passed. my current if logic does not work. 
 
 Pizza.prototype.getPrice = function() {
   const medium = 15
   const large = 20
   const xLarge = 24
-  if (this.pizzaSize === "medium") {
-    if ((this.toppings.includes("cheese")) && (this.toppings.includes("pepperoni"))) {
+  if (this.pizzaSize === "Medium") {
+    if ((this.toppings.includes("Cheese")) && (this.toppings.includes("Pepperoni"))) {
       return(medium + 2);
     } else {
       return(medium + 1);
     }
-  } else if (this.pizzaSize === "large")  {
-    if ((this.toppings.includes("cheese")) && (this.toppings.includes("pepperoni"))) {
+  } else if (this.pizzaSize === "Large")  {
+    if ((this.toppings.includes("Cheese")) && (this.toppings.includes("Pepperoni"))) {
       return (large + 2);
     } else {
       return(large + 1);
     }
-  } else if (this.pizzaSize === "xlarge") {
-    if ((this.toppings.includes("cheese")) && (this.toppings.includes("pepperoni"))) {
+  } else if (this.pizzaSize === "X-Large") {
+    if ((this.toppings.includes("Cheese")) && (this.toppings.includes("Pepperoni"))) {
       return(xLarge + 2);
     } else {
       return(xLarge + 1);

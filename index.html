@@ -9,9 +9,17 @@
 </head>
 <body>
   <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="animate-charcter"> Mark's Pizza Parlor</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
     <div class="jumbotron">
-      <h1>Mark's Pizza Parlor</h1>
-      <img src="img/Parlor_RN_120118_015HR.0.jpg" alt="image of pizza parlor">
+      <img src="img/Parlor_RN_120118_015HR.0.jpg" cless="center" alt="image of pizza parlor">
+      <h6>“Time is money, money is power, power is pizza, and pizza is knowledge, let's go!”
+        ― Aubrey Plaza</h6>
       <h3>Pizza Pricing:</h3>
       <ul>
         <li>Medium $15.00</li>
@@ -24,26 +32,26 @@
       <form id="pizzaOrder">
         <label for="pizza"><strong>Please pick your pizza size:</strong></label>
           <select class="form-control" id="pizzaSize">
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="xlarge">X-Large</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="X-Large">X-Large</option>
           </select>
         <label for="toppings"><strong>Please select your toppings:</strong></label> <br>
           <div>
-            <input type="checkbox" name="topping" value="cheese" checked>
+            <input type="checkbox" name="topping" value="Cheese" checked>
             <label for="cheese">Cheese</label>
           </div>    
           <div>
-            <input type="checkbox" name="topping"  value="pepperoni">
+            <input type="checkbox" name="topping"  value="Pepperoni">
             <label for="pepperoni">Pepperoni</label>
           </div>  
           <!-- <div>
             <input type="checkbox" name="topping" value="pinneapple">
             <label for="pinneapple">Pinneapple</label>
           </div>   -->
-        <button type="submit">Complete your order</button>
+        <button type="submit" class="bte btn-danger">Complete your order</button>
       </form>
-      <h6>Your Order for today is a:</h6><p id="output"></p>
+      <h5>Your Order for today is a:</h5><p id="output"></p>
     </div>       
   </div>
 </body>
