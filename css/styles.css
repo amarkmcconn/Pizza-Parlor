@@ -9,17 +9,6 @@
   margin-bottom: 50px;
   display: inline-block;
   box-sizing: border-box;
-  box-shadow:
-  0 1.6px 1.2px rgba(0, 0, 0, 0.063),
-  0 3.4px 2.7px rgba(0, 0, 0, 0.093),
-  0 5.8px 4.6px rgba(0, 0, 0, 0.115),
-  0 8.7px 6.9px rgba(0, 0, 0, 0.133),
-  0 12.5px 10px rgba(0, 0, 0, 0.15),
-  0 17.7px 14.2px rgba(0, 0, 0, 0.167),
-  0 25.1px 20.1px rgba(0, 0, 0, 0.185),
-  0 36.5px 29.2px rgba(0, 0, 0, 0.207),
-  0 56.3px 45px rgba(0, 0, 0, 0.237),
-  0 100px 80px rgba(92, 75, 75, 0.3);
 }
 
 .card {
@@ -54,7 +43,7 @@ button:hover {
 }
 
 body {
-  background-image: url(../img/R\ \(1\).jpg)
+  background-image: url(../img/03601f2a4c9f7e4b7b3bfe5868431da8.jpg)
 }
 
 img {
@@ -106,9 +95,6 @@ h6 {
   }
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+h5 {
+  padding: .5rem;
 }
