@@ -38,7 +38,11 @@ function Pizza(pizzaSize, toppings) {
 
 
 //UI Logic ---
-// function displayPizzaOrder()
+function displayPizzaInfo(pizzaToDisplay) {
+  let pizzaInfo = $("p#output");
+  let htmlForPizzaInfo = pizzaToDisplay.pizzaSize + " " + pizzaToDisplay.toppings + " Pizza" + " " + "$ " + pizzaToDisplay.getPrice();
+  pizzaInfo.html(htmlForPizzaInfo);
+}
 
 $(document).ready(function(){
   $("form#pizzaOrder").submit(function(event) {
@@ -49,8 +53,9 @@ $(document).ready(function(){
       ele.push($(this).val());
     })
     let myPizza = new Pizza(pizzaSize, ele)
-    let myPizzaPrice = myPizza.getPrice();
-    $("#output").text(myPizzaPrice);
+    displayPizzaInfo(myPizza);
+    // let myPizzaPrice = myPizza.getPrice();
+    
     });
 });   
    
