@@ -1,5 +1,6 @@
 //Business Logic ---
-// If i test my logic I get the correct values?????
+// If i test my logic I get the correct values????
+
 Pizza.prototype.getPrice = function() {
   const price = 10
   if (this.pizzaSize === "medium") {
